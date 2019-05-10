@@ -5,12 +5,6 @@
  <meta charset="UTF-8">
  <title>My First Page</title>
  <link rel="stylesheet" type="text/css" href="style.css" />
- <style type="text/css">
-   table {
-      border: 1px solid blue;
-     border-collapse: collapse;
-   }
- </style>
 </head>
 <body>
 <table>
@@ -21,42 +15,75 @@
         </th>
     </tr>
     <tr>
-           <th>
+           <th id="paquito">
                A
            </th>
-           <th>
+           <th class="high low">
                B
            </th>
            <th>
-               B
+               C
            </th>
        </tr>
    </thead>
    <tbody>
        <tr>
-           <td>
+           <td class="low">
                100
            </td>
-           <td>
+           <td class="low">
                200
            </td>
-           <td>
+           <td class="low">
                300
            </td>
        </tr>
        <tr>
-               <td>
+               <td class="high">
                    400
                </td>
-               <td>
+               <td class="high">
                    500
                </td>
-               <td>
+               <td class="high">
                    600
                </td>
            </tr>
+       <tr>
+           <td class="high">
+               400
+           </td>
+           <td class="high">
+               500
+           </td>
+           <td class="high">
+               600
+           </td>
+       </tr>
    </tbody>
 </table>
 
 </body>
 </html>
+
+table {
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+thead {
+background-color: #cce6ff;
+}
+
+#paquito {
+border: 1px solid red;
+background-color:#ff66b3;
+}
+
+.high:hover {
+background-color:#ff66b3;
+}
+
+.low {
+color:red;
+}
